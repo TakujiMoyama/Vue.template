@@ -1,6 +1,6 @@
 const app = Vue.createApp({
     data: () => ({
-        message: 'Hello Vue.js'
+        url: 'https://www.google.co.jp/'
     })
 })
 app.mount('#app')
