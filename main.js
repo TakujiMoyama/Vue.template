@@ -1,15 +1,26 @@
+// const app = Vue.createApp({
+//     data: () => ({
+//         firstName: "",
+//         lastName: "",
+//         fullName: ""
+//     }),
+//     watch:{
+//         firstName: function(value){
+//             this.fullName = value + ' ' + this.lastName
+//         },
+//         lastName: function(value){
+//             this.fullName = this.firstName + ' ' + value
+//         }
+//     }
+// })
 const app = Vue.createApp({
     data: () => ({
-        basePrice: 100
+        firstName: "",
+        lastName: "",
     }),
-    computed:{
-        taxIncludedPrice:{
-            get: function(){
-                return this.basePrice *1.1
-            },
-            set: function(value){
-                this.basePrice = value / 1.1
-            }
+    computed: {
+        fullName: function(){
+            return this.firstName + ' ' + this.lastName
         }
     }
 })

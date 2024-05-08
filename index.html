@@ -8,8 +8,10 @@
 </head>
 <body>
     <div id="app">
-        <p>base price: <input type="text" v-model="basePrice"></p>
-        <p>tax incruded price: <input type="text" v-model="taxIncludedPrice"></p>
+        <h2>名前入力アプリ</h2>
+        <p>firstName: <input type="text" v-model="firstName"></p>
+        <p>lastName: <input type="text" v-model="lastName"></p>
+        <p>fullName: {{ fullName }}</p>
     </div>
     <script src="http://unpkg.com/vue@3.1.5"></script>
     <script src="main.js"></script>
